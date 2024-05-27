@@ -1,0 +1,42 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.movie-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.movie-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.movie-item .title {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.movie-item .description {
+    font-size: 0.9rem;
+}
+
+.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: #495057;
+}
+
+.dark-mode .movie-item {
+    background-color: #495057;
+    border: 1px solid #6c757d;
+}
