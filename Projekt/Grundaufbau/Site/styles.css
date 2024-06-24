@@ -1,12 +1,12 @@
 body {
-    background-color: black;
+    background-color: #242124;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     margin: 0;
     padding-top: 60px;
 }
@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    background-color: #f8f9fa;
+    background-color: #1B1B1B;
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,14 +36,17 @@ body {
 }
 .navbar ul li a {
     text-decoration: none;
-    color: #333;
+    color: #F5F5F5;
     padding: 14px 20px;
     display: block;
 }
+
 .navbar ul li a:hover {
-    background-color: #ddd;
+    background-color: #1B1B1B;
     border-radius: 4px;
+    opacity: 0.5;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
