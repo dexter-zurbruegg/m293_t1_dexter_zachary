@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Spiele-Umfrage</h1>
-        <form>
+        <form id="surveyForm">
             <div class="form-group">
                 <label for="favoriteGame">Welches ist ihr aktuelles Lieblingsspiel (Computerspiele)?</label>
                 <select id="favoriteGame" name="favoriteGame">
@@ -25,7 +25,7 @@
                         <option value="spiel9">For Honor</option>
                         <option value="spiel10">Elden Ring</option>
                     </optgroup>
-                    <optgroup label="Escape-Optionen">
+                    <optgroup label="Andere">
                         <option value="none">Ich spiele keine Spiele</option>
                         <option value="other">Andere:</option>
                     </optgroup>
@@ -70,4 +70,30 @@
                     <label class="form-check-label" for="regularSpiel8">HELLDIVERS 2</label>
                 </div>
                 <div class="form-check">
-                    <input type="
+                    <input type="checkbox" value="spiel9" id="regularSpiel9" name="regularSpiele">
+                    <label class="form-check-label" for="regularSpiel9">For Honor</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="spiel10" id="regularSpiel10" name="regularSpiele">
+                    <label class="form-check-label" for="regularSpiel10">Elden Ring</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="none" id="regularSpielNone" name="regularSpiele">
+                    <label class="form-check-label" for="regularSpielNone">Ich spiele keine Spiele</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" value="other" id="regularSpielOther" name="regularSpiele">
+                    <label class="form-check-label" for="regularSpielOther">Andere:</label>
+                </div>
+                <div class="form-group" id="regularOtherGameGroup">
+                    <label for="regularOtherGame">Bitte geben Sie andere Spiele an:</label>
+                    <input type="text" id="regularOtherGame" name="regularOtherGame">
+                </div>
+            </div>
+            <button type="submit">Absenden</button>
+        </form>
+        <div id="formData"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
