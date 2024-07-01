@@ -45,5 +45,5 @@ document.getElementById('surveyForm').addEventListener('submit', function(event)
             output[key] = value;
         }
     });
-    document.getElementById('formData').textContent = JSON.stringify(output, null, 2);
+    document.getElementById('formData').textContent = JSON.stringify(output);
 });
