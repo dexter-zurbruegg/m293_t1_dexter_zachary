@@ -1,0 +1,97 @@
+body {
+    background-color: #242124;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    padding-top: 60px;
+}
+.container {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #1B1B1B;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #F5F5F5;
+    padding: 14px 20px;
+    display: block;
+}
+.navbar ul li a:hover {
+    background-color: #1B1B1B;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .about-me-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.image-container {
+    flex: 1;
+    max-width: 300px;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.about-me-text {
+    text-align: left;
+}
+
+.about-me-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-me-list li {
+    background: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.personal-info-title {
+    margin-top: 0px;
+}
