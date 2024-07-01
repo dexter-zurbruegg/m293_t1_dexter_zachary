@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meine Spotify-Playlists</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="form-styles.css" />
 </head>
 <body>
@@ -15,69 +15,71 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about-me.html">About Me</a></li>
             <li><a href="playlists.html">Playlists</a></li>
-            <li><a href="form.html">Formular</a></li>
+            <li><a href="form.html">Sign up</a></li>
         </ul>
     </nav>
     <div class="container">
-        <h1>Registrierung</h1>
+        <h1>Sign up</h1>
+        <h3>Sign up to get more recommendations and playlists!</h3>
         <form id="registrationForm" action="confirmation.html" method="POST">
             <div class="form-group">
-                <label for="gender">Geschlecht:</label>
+                <label for="gender">Gender</label>
                 <div class="radio-group">
                     <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Männlich</label>
+                    <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Weiblich</label>
+                    <label for="female">Female</label>
                     <input type="radio" id="other" name="gender" value="other" required>
-                    <label for="other">Andere</label>
+                    <label for="other">Other</label>
                 </div>
             </div>
             <div class="form-group">
-                <label for="firstName">Vorname:</label>
+                <label for="firstName">Name</label>
                 <input type="text" id="firstName" name="firstName" required>
             </div>
             <div class="form-group">
-                <label for="lastName">Nachname:</label>
+                <label for="lastName">Surname</label>
                 <input type="text" id="lastName" name="lastName" required>
             </div>
             <div class="form-group">
-                <label for="email">E-Mail:</label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
             <div class="form-group">
-                <label for="address">Adresse:</label>
+                <label for="address">Address</label>
                 <input type="text" id="address" name="address" required>
             </div>
             <div class="form-group">
-                <label for="postalCode">PLZ:</label>
+                <label for="postalCode">Postcode</label>
                 <input type="text" id="postalCode" name="postalCode" required>
             </div>
             <div class="form-group">
-                <label for="city">Ort:</label>
+                <label for="city">Place</label>
                 <input type="text" id="city" name="city" required>
             </div>
             <div class="form-group">
-                <label for="country">Land:</label>
+                <label for="country">Country</label>
                 <select id="country" name="country" required>
-                    <option value="">Bitte wählen</option>
-                    <option value="DE">Deutschland</option>
-                    <option value="AT">Österreich</option>
-                    <option value="CH">Schweiz</option>
+                    <option value="">Please choose</option>
+                    <option value="DE">Germany</option>
+                    <option value="AT">Austria</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="other">Other</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="privacyPolicy">
                     <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
-                    Datenschutz akzeptieren
+                    Accept Terms of Service
                 </label>
             </div>
-            <button type="submit">Registrieren</button>
+            <button type="submit">Sign up</button>
         </form>
     </div>
-    <script src="scripts.js"></script>
+    <script src="form-scripts.js"></script>
 </body>
 </html>
