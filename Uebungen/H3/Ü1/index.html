@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiele-Umfrage</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container">
         <h1>Spiele-Umfrage</h1>
         <form>
             <div class="form-group">
                 <label for="favoriteGame">Welches ist ihr aktuelles Lieblingsspiel (Computerspiele)?</label>
-                <select class="form-control" id="favoriteGame" name="favoriteGame">
-                    <optgroup label="Beliebte Spiele"> Der <optgroup> //Tag wird verwendet, um die Spiele in Gruppen (beliebte Spiele und Escape-Optionen) zu unterteilen.
-                        <option value="spiel1">Rainbow Six Siege</option>s
+                <select id="favoriteGame" name="favoriteGame">
+                    <optgroup label="Beliebte Spiele">
+                        <option value="spiel1">Rainbow Six Siege</option>
                         <option value="spiel2">Fortnite</option>
                         <option value="spiel3">Minecraft</option>
                         <option value="spiel4">osu!</option>
@@ -30,70 +30,44 @@
                         <option value="other">Andere:</option>
                     </optgroup>
                 </select>
-                <div class="form-group mt-2" id="otherGameGroup" style="display: none;">
+                <div class="form-group" id="otherGameGroup">
                     <label for="otherGame">Bitte geben Sie das andere Spiel an:</label>
-                    <input type="text" class="form-control" id="otherGame" name="otherGame">
+                    <input type="text" id="otherGame" name="otherGame">
                 </div>
             </div>
             <div class="form-group">
                 <label>Welche der folgenden Spiele spielen sie regelmäßig?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel1" id="regularSpiel1" name="regularSpiele">
+                    <input type="checkbox" value="spiel1" id="regularSpiel1" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel1">Rainbow Six Siege</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel2" id="regularSpiel2" name="regularSpiele">
+                    <input type="checkbox" value="spiel2" id="regularSpiel2" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel2">Fortnite</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel3" id="regularSpiel3" name="regularSpiele">
+                    <input type="checkbox" value="spiel3" id="regularSpiel3" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel3">Minecraft</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel4" id="regularSpiel4" name="regularSpiele">
+                    <input type="checkbox" value="spiel4" id="regularSpiel4" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel4">osu!</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel5" id="regularSpiel5" name="regularSpiele">
+                    <input type="checkbox" value="spiel5" id="regularSpiel5" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel5">The Last of Us Part 1</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel6" id="regularSpiel6" name="regularSpiele">
+                    <input type="checkbox" value="spiel6" id="regularSpiel6" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel6">Risk of Rain 2</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel7" id="regularSpiel7" name="regularSpiele">
+                    <input type="checkbox" value="spiel7" id="regularSpiel7" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel7">Dying Light 2</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel8" id="regularSpiel8" name="regularSpiele">
+                    <input type="checkbox" value="spiel8" id="regularSpiel8" name="regularSpiele">
                     <label class="form-check-label" for="regularSpiel8">HELLDIVERS 2</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel9" id="regularSpiel9" name="regularSpiele">
-                    <label class="form-check-label" for="regularSpiel9">For Honor</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="spiel10" id="regularSpiel10" name="regularSpiele">
-                    <label class="form-check-label" for="regularSpiel10">Elden Ring</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="none" id="regularSpielNone" name="regularSpiele">
-                    <label class="form-check-label" for="regularSpielNone">Ich spiele keine Spiele</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="other" id="regularSpielOther" name="regularSpiele">
-                    <label class="form-check-label" for="regularSpielOther">Andere:</label>
-                </div>
-                <div class="form-group mt-2" id="regularOtherGameGroup" style="display: none;">
-                    <label for="regularOtherGame">Bitte geben Sie andere Spiele an:</label>
-                    <input type="text" class="form-control" id="regularOtherGame" name="regularOtherGame">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Absenden</button>
-        </form>
-    </div>
-    <script src="scripts.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+                    <input type="
