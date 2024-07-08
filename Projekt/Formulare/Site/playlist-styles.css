@@ -63,3 +63,18 @@ body {
     margin-top: 10px;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .playlist-row {
+        display: block;
+    }
+
+    .playlist-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .playlist-container:last-child {
+        margin-bottom: 0;
+    }
+}
