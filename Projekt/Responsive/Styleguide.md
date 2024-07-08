@@ -1,8 +1,5 @@
 # Styleguide for the Spotify Playlist Showcase Website
 
-## Logo
-![](./Images/decter_music-logo.png)
-
 ## Typography
 [Poppins](https://fonts.google.com/specimen/Poppins)
 
@@ -13,5 +10,4 @@
 
 ## Wireframes
 
-![alt text](Images/image3.png)
-![alt text](Images/image4.png)
+(![alt text](Images/image.png))
